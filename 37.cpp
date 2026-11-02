@@ -16,7 +16,7 @@ bool hasDuplicateWord(const vector<string>& words) {
     return false;
 }
 
-bool isAnagramMap(const string& s, const string& t) {
+bool isAnagramMap1(const string& s, const string& t) {
     if (s.size() != t.size()) return false;
     unordered_map<char, int> balance;
     for (size_t i{}; i < s.size(); i++) {
@@ -28,6 +28,8 @@ bool isAnagramMap(const string& s, const string& t) {
     }
     return true;
 }
+
+
 
 int main()  {
     vector<string> words {"apple", "banana", "apple", "cherry"};

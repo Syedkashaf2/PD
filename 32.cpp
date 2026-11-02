@@ -11,7 +11,7 @@ void mostFrequentElement(const vector<int>& nums, int &num, int &occ ) {
     }
 
     int best_num{};
-    int max_count{0};
+    int max_count{};
     // Step 2: Loop over the map to find the pair with the largest pair.second!
     for (const auto &pair : freq) {
         if (pair.second > max_count) {
