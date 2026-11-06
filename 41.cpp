@@ -18,8 +18,8 @@ int countWordsAppearingExactlyTwice(const vector<string>& words) {
     }
     int count{};
     for ( auto n : group )    {
-        cout << n.first << '\t';
-        cout << n.second << '\n';
+        //cout << n.first << '\t';
+        //cout << n.second << '\n';
         if ( n.second == 2 )
           count++;
         }

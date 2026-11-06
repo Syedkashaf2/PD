@@ -18,7 +18,7 @@ bool hasOppositePair(const vector<int>& nums) {
 }
 
 int main ()  {
-    vector<int> nums {4, -2, 9, 0, -2};
+    vector<int> nums {4, -2, 9, 0, 2};
     cout << hasOppositePair(nums) << '\n';
     return 0;
 }
