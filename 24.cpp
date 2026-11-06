@@ -2,9 +2,11 @@
 #include <vector>
 using namespace std;
 
-void findMinAndMax(const vector<int>& nums, int &min_out, int &max_out) {
+void findMinAndMax(const vector<int> &nums, int &min_out, int &max_out)
+{
     // 1. If nums is empty, set min_out = 0 and max_out = 0, and return.
-    if ( nums.empty() ) { 
+    if (nums.empty())
+    {
         min_out = 0;
         max_out = 0;
         return;
@@ -15,23 +17,27 @@ void findMinAndMax(const vector<int>& nums, int &min_out, int &max_out) {
 
     // 3. Loop through nums: update min_out if you see a smaller number, and update max_out if you see a larger number.
 
-    for ( size_t i {1}; i < nums.size(); i++ )   {
+    for (size_t i{1}; i < nums.size(); i++)
+    {
 
-        if ( nums[i] < min_out ) {
+        if (nums[i] < min_out)
+        {
             min_out = nums[i];
-        } else if ( nums[i] > max_out ) {
+        }
+        else if (nums[i] > max_out)
+        {
             max_out = nums[i];
         }
     }
     return;
 }
 
-int main()  {
-    vector<int> nums {14, -3, 28, 7, 0};
-    int min{},max{};
+int main()
+{
+    vector<int> nums{14, -3, 28, 7, 0};
+    int min{}, max{};
 
     findMinAndMax(nums, min, max);
 
-    cout << "MAX : " << max << '\n'
-         << "MIN : " << min << '\n';
+    cout << "MAX : " << max << '\n' << "MIN : " << min << '\n';
 }

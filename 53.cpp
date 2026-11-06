@@ -2,18 +2,28 @@
 #include <string>
 using namespace std;
 
-class Drone {
+class Drone
+{
     string id;
-public:
-    Drone(string s) : id(s) { cout << "Launch " << id << "\n"; }
-    ~Drone()                { cout << "Land " << id << "\n"; }
+
+  public:
+    Drone(string s) : id(s)
+    {
+        cout << "Launch " << id << "\n";
+    }
+    ~Drone()
+    {
+        cout << "Land " << id << "\n";
+    }
 };
 
-void patrol() {
+void patrol()
+{
     Drone d2("D2");
 }
 
-int main() {
+int main()
+{
     Drone d1("D1");
     patrol();
     {

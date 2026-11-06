@@ -3,7 +3,8 @@
 #include <unordered_map>
 using namespace std;
 
-int main() {
+int main()
+{
     unordered_map<string, string> registry;
     registry["Player1"] = "Alive";
     registry["Player2"] = "Dead";
@@ -13,9 +14,12 @@ int main() {
     // THE BRACKET TRAP!
     // Just by checking registry["Player3"], C++ silently INSERTS "Player3"
     // with an empty string "" into the map!
-    if (registry["Player3"] == "Dead") {
+    if (registry["Player3"] == "Dead")
+    {
         cout << "Player3 is Dead -> ";
-    } else {
+    }
+    else
+    {
         cout << "Player3 is Unknown -> ";
     }
 
@@ -23,11 +27,14 @@ int main() {
     cout << registry.size() << "\n"; // Prints: 3!
 
     // SAFE WAY (Does NOT insert "Player3"!):
-    if (registry.count("Player4") > 0) {
+    if (registry.count("Player4") > 0)
+    {
         cout << "Player4 status: " << registry["Player4"] << "\n";
-    } else {
+    }
+    else
+    {
         cout << "Player4 is not in the map!\n";
     }
-// registry.size() stays 2!
+    // registry.size() stays 2!
     return 0;
 }

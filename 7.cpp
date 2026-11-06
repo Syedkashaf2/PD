@@ -4,17 +4,21 @@ using namespace std;
 #include <iostream>
 using namespace std;
 
-int sumOfEvenDigits(int num) {
+int sumOfEvenDigits(int num)
+{
     // Write your code here
-    if ( num < 0 )  {
+    if (num < 0)
+    {
         num = -num;
     }
 
     int rem{}, dig{}, sum{};
-    //temp = num;
-    while ( num > 0 )   {
+    // temp = num;
+    while (num > 0)
+    {
         rem = num % 10;
-        if ( rem % 2 == 0 ) {
+        if (rem % 2 == 0)
+        {
             sum += rem;
         }
         num /= 10;
@@ -22,7 +26,8 @@ int sumOfEvenDigits(int num) {
     return sum;
 }
 
-int main()  {
+int main()
+{
     cout << "Sum : " << sumOfEvenDigits(482353) << '\n';
     return 0;
 }

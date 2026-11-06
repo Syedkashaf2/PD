@@ -3,22 +3,28 @@
 #include <vector>
 using namespace std;
 
-bool hasOppositePair(const vector<int>& nums) {
+bool hasOppositePair(const vector<int> &nums)
+{
     // Write your code here!
     unordered_map<int, int> seen;
-    for ( auto &n : nums )  {
+    for (auto &n : nums)
+    {
         int needed = -n;
-        if ( seen.count(needed) > 0 )   {
+        if (seen.count(needed) > 0)
+        {
             return 1;
-        } else {
+        }
+        else
+        {
             seen[n] = 0;
         }
     }
     return 0;
 }
 
-int main ()  {
-    vector<int> nums {4, -2, 9, 0, 2};
+int main()
+{
+    vector<int> nums{4, -2, 9, 0, 2};
     cout << hasOppositePair(nums) << '\n';
     return 0;
 }

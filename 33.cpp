@@ -3,16 +3,19 @@
 #include <unordered_map>
 using namespace std;
 
-int main() {
+int main()
+{
     unordered_map<string, int> stock;
     stock["Apples"] = 10;
     stock["Oranges"] = 5;
 
     cout << stock.size() << " | ";
-    if (stock["Bananas"] == 0) {
+    if (stock["Bananas"] == 0)
+    {
         cout << "Out of Bananas | ";
     }
-    if (stock.count("Grapes") > 0) {
+    if (stock.count("Grapes") > 0)
+    {
         cout << "Has Grapes | ";
     }
     cout << stock.size() << "\n";

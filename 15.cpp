@@ -2,15 +2,18 @@
 #include <vector>
 using namespace std;
 
-int main() {
+int main()
+{
     vector<int> row = {10, 20, 30};
     vector<vector<int>> grid;
     grid.push_back(row);
 
-    for (auto x : row) {
+    for (auto x : row)
+    {
         x = x * 10;
     }
-    for (auto &x : row) {
+    for (auto &x : row)
+    {
         x = x + 5;
     }
 
