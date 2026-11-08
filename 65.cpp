@@ -22,7 +22,7 @@ void moveZeroes(vector<int> &nums)
 
 int main()
 {
-    vector<int> nums{0, 1, 0, 3, 12};
+    vector<int> nums{4, 0, 5};
     cout << "Before : ";
     for (auto &n : nums)
     {
