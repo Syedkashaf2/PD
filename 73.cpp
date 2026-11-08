@@ -18,8 +18,8 @@ int longestSubarrayWithinBudget(const vector<int> &costs, int budget)
         {
             currentSum -= costs.at(left);
             left++;
-            maxLen = max(maxLen, i - left + 1);
         }
+        maxLen = max(maxLen, i - left + 1);
     }
     return maxLen;
 }

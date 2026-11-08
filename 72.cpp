@@ -22,12 +22,13 @@ int minSubArrayLen(int target, const vector<int> &nums)
             // cout << left << '\n';
         }
     }
-    return minLen;
+    return ((minLen == nums.size() + 1) ? 0 : minLen);
 }
 
 int main()
 {
-    vector<int> nums = {1, 4, 4};
-    int target = 4;
+    // vector<int> nums = {1, 4, 4};
+    vector<int> nums = {1, 1, 1, 1, 1};
+    int target = 40;
     cout << minSubArrayLen(target, nums) << '\n';
 }
