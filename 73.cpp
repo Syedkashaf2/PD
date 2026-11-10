@@ -26,8 +26,8 @@ int longestSubarrayWithinBudget(const vector<int> &costs, int budget)
 
 int main()
 {
-    vector<int> costs = {3, 1, 2, 7, 4, 2, 1, 1, 5};
-    int budget = 8;
+    vector<int> costs = {3, 2, 5};
+    int budget = 5;
 
     cout << longestSubarrayWithinBudget(costs, budget) << '\n';
 
